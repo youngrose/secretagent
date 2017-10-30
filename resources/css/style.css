@@ -6,6 +6,15 @@ header{
   font-family: helvetica, sans-serif;
   color: white;
 }
+body{
+  line-height: 1.6em;
+}
+@media only screen and (max-width 1024px){
+  body{
+    font-size: 16px;
+  }
+}
+/* HEADER */
 header{
   display: flex;
   width: 100%;
@@ -17,8 +26,125 @@ header{
   align-items: center;
   padding: 12px 0;
 }
+.logo span{
+  color: white;
+}
 .logo img{
   height: 1.5em;
   padding-left: 30px;
   padding-right: 15px;
 }
+/* MAIN */
+.main{
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* BANNER */
+.banner{
+  height: 25em;
+  background-image: url("../images/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannertext{
+  background-color: black;
+  position: relative;
+  width: 20em;
+  padding: 2em 3em;
+  top: 9em;
+}
+.bannertext h1{
+  font-size: 1.75em;
+  padding-top: 0.25em;
+  font-weight: bold;
+}
+/* NAV BAR */
+nav{
+  background-color: firebrick;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+.mobile-nav{
+  display: none;
+}
+@media only screen and (max-width: 1024px){
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px){
+    nav ul{
+      display: none;
+    }
+}
+/* PRODUCTS */
+.products{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.product-image{
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9em;
+  padding: 2em 0;
+}
+.product span{
+  color: white;
+}
+.product-image img{
+  max-width: 8em;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: .25em .5em .5em .5em;
+}
+.product{
+  width: 30%;
+}
+@media only screen and (max-width: 1024px){
+  .product{
+    max-width: 47%;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .product.glasses{
+    display: none;
+  }
+}
+.biz-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 4rem 0;
+}
+.info{
+  width: 35%;
+}
+.title{
+  display: block;
+  background-color: black;
+  padding: 1rem 0 1rem 3rem;
+  color: white;
+}
+span{
+  color: black;
+}
+footer{
+  background-color: black;
+  padding: 5em 0;
+}
+
+/* RESIZING QUIRIES FOR PHONE SCREENS */
