@@ -74,23 +74,10 @@ nav ul{
 .mobile-nav{
   display: none;
 }
-@media only screen and (max-width: 1024px){
-  .mobile-nav{
-    display: block;
-    text-align: center;
-  }
-  nav ul{
-    display: none;
-  }
-  .product.glasses{
-    display: none;
-  }
-  .product{
-    width: 47%;
-  }
-}
-
 /* PRODUCTS */
+.product{
+  width: 30%;
+}
 .products{
   display: flex;
   justify-content: space-between;
@@ -110,15 +97,11 @@ nav ul{
 .product-image img{
   max-width: 8em;
 }
-
 .description{
   display: flex;
   justify-content: center;
   background-color: black;
   padding: .25em .5em .5em .5em;
-}
-.product{
-  width: 30%;
 }
 .biz-info{
   display: flex;
@@ -141,7 +124,22 @@ footer{
   background-color: black;
   padding: 5em 0;
 }
-
+/* RESIZING QUERIES FOR TABLETS*/
+@media only screen and (max-width: 1024px){
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
+  nav ul{
+    display: none;
+  }
+  .product.glasses{
+    display: none;
+  }
+  .product{
+    width: 47%;
+  }
+}
 /* RESIZING QUERIES FOR PHONE SCREENS */
 @media only screen and (max-width: 480px){
   .banner{
@@ -172,6 +170,7 @@ footer{
   .info{
     width: 90%;
     padding-bottom: 1rem;
+    margin: auto;
   }
   footer{
     text-align: center;
