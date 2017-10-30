@@ -38,7 +38,7 @@ header{
 .main{
 }
 .container{
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 /* BANNER */
@@ -79,12 +79,17 @@ nav ul{
     display: block;
     text-align: center;
   }
+  nav ul{
+    display: none;
+  }
+  .product.glasses{
+    display: none;
+  }
+  .product{
+    width: 47%;
+  }
 }
-@media only screen and (max-width: 1024px){
-    nav ul{
-      display: none;
-    }
-}
+
 /* PRODUCTS */
 .products{
   display: flex;
@@ -175,3 +180,4 @@ footer{
     display: flex;
     justify-content: center;
   }
+}
